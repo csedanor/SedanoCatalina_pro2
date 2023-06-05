@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Formulario Trabajadores</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+</head>
+<body>
+
+	<form th:action="@{/save}" th:object="${trabajadores}" method="POST"
+		action="">
+		<img width="20%" height="20%" class="rounded mx-auto d-block" alt=""
+			src="https://copservir.vtexassets.com/assets/vtex/assets-builder/copservir.larebaja-theme/0.0.98/images/logo-larebaja___95de3b6f748bf124d010efa48feb5557.svg">
+		<br>
+		<h1 class="text-center text-uppercase text-danger">Formulario de
+			trabajadores</h1>
+
+		<div class="card-body">
+
+			<div class="form-group">
+				<label class="text-danger"><b>Nombre Completo<b></b></label> <input
+					th:field="*{nombre}" type="text" class="form-control"
+					placeholder="Ingrese su nombre completo" required>
+			</div>
+			<div class="form-group">
+				<label class="text-danger">Cedula</label> <input
+					th:field="*{cedula}" type="text" class="form-control"
+					placeholder="Ingrese su numero de cedula" required>
+			</div>
+			<div class="form-group">
+				<label class="text-danger">Cargo</label> <input th:field="*{cargo}"
+					type="text" class="form-control" placeholder="Ingrese su cargo"
+					required="cargo">
+			</div>
+			<div class="form-group">
+				<label class="text-danger">Sede</label> <select id="Sede"
+					name="sede" class="form-control"
+					placeholder="Ingrese la sede de trabajo" required>
+					<option value="Bogota">Bogota</option>
+					<option value="Medellin">Medellin</option>
+					<option value="Cali">Cali</option>
+					<option value="Santa Marta">Santa Marta</option>
+				</select>
+			</div>
+		</div>
+		<div class="box-footer">
+			<button class="btn btn-danger">Guardar</button>
+		</div>
+		<br> <br> <a th:href="@{/}" class="btn btn-danger">Regresar</a>
+
+	</form>
+
+</body>
+</html>
