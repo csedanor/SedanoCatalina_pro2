@@ -14,4 +14,12 @@ Proyecto de gestion de manejo de trabajadores, inventario, proveedores y ventas
  - Lista de las ventas obtenidas en todas las sedes. 
  
   ## Video explicativo
+  https://youtu.be/Cvg-IB3b4Y4
   
+  
+  ## Prerequisistos
+El codigo solo corre en [ECLIPSE IDE] (https://www.eclipse.org).
+
+## Licencia
+Distribuido bajo la Licencia Pública General GNU v3.0. Consulte LICENSE.txt para obtener más detalles.
+      
