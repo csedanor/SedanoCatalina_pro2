@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Ventas</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+</head>
+<body>
+	<form th:action="@{/saveventas}" th:object="${ventas}" method="POST"
+		action="">
+		<img width="20%" height="20%" class="rounded mx-auto d-block" alt=""
+			src="https://copservir.vtexassets.com/assets/vtex/assets-builder/copservir.larebaja-theme/0.0.98/images/logo-larebaja___95de3b6f748bf124d010efa48feb5557.svg">
+		<h1 class="text-center text-uppercase text-danger">Ventas La Rebaja</h1>
+		<div class="card-body">
+
+			<div class="form-group">
+				<label class="text-danger" ><b>Sede<b></label > <select
+					id="sede" name="sede" class="form-control" required>
+					<option value="Bogota">Bogota</option>
+					<option value="Medellin">Medellin</option>
+					<option value="Cali">Cali</option>
+					<option value="Santa Marta">Santa Marta</option>
+					
+				</select>
+				<label class="text-danger"><b>Categoria<b></label> <select
+					id="categoria" name="categoria" class="form-control" required></select>
+
+				<br> <label class="text-danger"><b>Producto<b></label> <select
+					id="producto" name="producto" class="form-control" required></select> <br> 
+					
+				<div class="form-group">
+						<label class= "text-danger">Precio</label> <input id="precio" name="precio" type="text"
+							class="form-control" readonly>
+					</div>
+				  <div class="box-footer"> <button class = "btn btn-danger"> Guardar</button> </div> 
+			 	  <br>  <a th:href="@{/}" class="btn btn-danger">Regresar</a> 
+	</form>
+	<script src="/script/ventas.js"></script>
+</body>
+</html>
