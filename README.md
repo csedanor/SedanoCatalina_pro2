@@ -12,9 +12,10 @@ Proyecto de gestion de manejo de trabajadores, inventario, proveedores y ventas
  - Solicitud a los proveedores, dependiendo la sede.
  - Area de ventas, dependiendo del inventario de la sede. 
  - Lista de las ventas obtenidas en todas las sedes. 
+ - Genera un pdf donde sen las ventas obtenidas por todas las sedes
  
-  ## Video explicativo
-  https://youtu.be/Cvg-IB3b4Y4
+  ## Video tutorial
+ https://youtu.be/E5cLMK8LZKE
   
   
   ## Prerequisistos
